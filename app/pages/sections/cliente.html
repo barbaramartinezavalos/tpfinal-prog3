@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cliente</title>
+    <script src="/users/webCliente.js" defer></script>
+</head>
+<body>
+    <div class="main">
+        <div class="contenedor">
+            <form id="reclamoCliente-form">
+                <h2>agregar Reclamos</h2>
+
+                <div class="tipo-reclamo">
+                    <label for="#">Tipo de Reclamo</label>
+                    <select id="tipo" required>
+                    </select>
+                </div>
+
+                <div class="input-contenedor">
+                    <input id="asunto" type="text" required>
+                    <label for="#">Asunto</label>
+                </div>
+                <div class="input-contenedor">
+                    <h4>Descripción</h4>
+                    <textarea id="descripcion" required rows="6"></textarea>
+                </div>
+                <button class="boton">Enviar</button>
+            </form>
+            <button id="cerrarSesion">Cerrar Sesión</button>
+
+            <h2>Mis Reclamos</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Asunto</th>
+                        <th>Descripción</th>
+                        <th>Fecha del Reclamo</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="tabla_datos">
+                </tbody>
+            </table>
+            <form id="actualizar-perfil">
+                <h2>Actualizar Perfil</h2>
+                <div class="input-contenedor">
+                    <input id="nombre" type="text">
+                    <label for="#">Nombre</label>
+                </div>
+                <div class="input-contenedor">
+                    <input id="apellido" type="text">
+                    <label for="#">Apellido</label>
+                </div>
+                <div class="input-contenedor">
+                    <input id="correoElectronico" type="email" >
+                    <label for="#">Correo Electronico</label>
+                </div>
+                
+                <div class="input-contenedor">
+                    <input id="contraseña" type="password">
+                    <label for="#">Contraseña</label>
+                </div>
+                <button class="boton">Enviar</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,16 @@
+RECLAMO,TIPO,ESTADO,FECHA CREADO,CLIENTE
+5,Falla de motor,Creado,2024-08-19 06:00:00,Yara Greyjoy
+15,Falla de motor,Creado,2024-08-28 19:26:12,Jose Battaglia
+7,Falla de frenos,Creado,2024-08-15 07:15:00,Catelyn Stark
+8,Falla de suspensión,Creado,2024-08-15 08:00:00,Khal Drogo
+11,Falla de suspensión,En Proceso,2024-08-15 15:00:00,Catelyn Stark
+9,Aprobación de cobertura,Creado,2024-08-15 09:30:00,Khal Drogo
+10,Aprobación de cobertura,En Proceso,2024-08-15 09:00:00,Khal Drogo
+16,Reemplazo de piezas,En Proceso,2024-10-24 14:29:33,Yara Greyjoy
+17,Reemplazo de piezas,Creado,2024-11-01 01:59:51,Yara Greyjoy
+18,Reemplazo de piezas,Creado,2024-11-01 02:00:50,Yara Greyjoy
+21,Reemplazo de piezas,Cancelado,2024-11-05 16:18:54,fran barsi
+22,Reemplazo de piezas,En Proceso,2024-11-05 16:20:18,fran barsi
+23,Reemplazo de piezas,Creado,2024-11-05 19:49:40,fran barsi
+24,Reemplazo de piezas,En Proceso,2024-11-06 00:53:58,Franco Barsi
+25,Reemplazo de piezas,Creado,2024-11-06 19:37:26,fran barsi

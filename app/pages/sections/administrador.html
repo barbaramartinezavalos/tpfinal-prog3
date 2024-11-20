@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador</title>
+    <script src="/users/webAdministrador.js" defer></script>
+</head>
+<body>
+    <h1>Seccion del Administrador</h1>
+    <button id="Cerrar-Sesion">Cerrar Sesión</button>
+    <form id="form_tipo">
+        <input id="tipo">
+        <button>Agregar</button>
+    </form>
+    <h2>Tipos de reclamos</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Descripción</th>
+                <th>Opciones</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody id="tabla_reclamos">
+        </tbody>
+    </table>
+    <form id="form_empleados">
+        <label for="#">Oficina</label>
+        <input id="Oficina">
+        <label for="#">Tipo de Reclamo</label>
+        <select id="tipo" required>
+        </select>
+        <button>Agregar</button>
+    </form>
+    
+</body>
+</html>

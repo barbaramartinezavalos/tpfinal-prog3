@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+    <script src="/register.js" defer></script>
+</head>
+<body>
+    <div class="main">
+        <div class="contenedor">
+                <form id="register-form">
+                    <h2>Registrarme</h2>
+
+                    <div class="input-contenedor">
+                        <input id="nombre" type="text" oncharequired>
+                        <label for="#">Nombre</label>
+                    </div>
+                    <div class="input-contenedor">
+                        <input id="apellido" type="text" required>
+                        <label for="#">Apellido</label>
+                    </div>
+                    <div class="input-contenedor">
+                        <input id="correoElectronico" type="email" required>
+                        <label for="#">Correo Electrónico</label>
+                    </div>
+                    
+                    <div class="input-contenedor">
+                        <input id="contrasenia" type="password" required>
+                        <label for="#">Contraseña</label>
+                    </div>
+
+                    <div class="Roles">
+                        <label for="#">Rol</label>
+                        <select id="rol" required>
+                            <option value="Cliente">Cliente</option>
+                            <option value="Empleado">Empleado</option>
+                            <option value="Administrador">Administrador</option>
+                        </select>
+                    </div>
+                    <button class="boton">Listo</button>
+                </form>
+                <p>¿Ya te registraste? <a href="/">Iniciar Sesion</a></p>
+        </div>
+    </div>
+</body>
+</html>

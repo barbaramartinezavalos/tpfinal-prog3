@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+    <title>Informe de Reclamos</title>
+    <style>
+        * {
+            font-family: 'Montserrat', 'Arial', sans-serif;
+            font-weight: 400;
+        }
+        body {
+            
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 10px auto;
+            padding: 50px;
+            background-color: #ffffff;
+        }
+
+        h1 {
+            text-align: center;
+            color: #000000;
+            font-size: 32px;
+            margin-bottom: 50px;
+            font-weight: 600;
+        }
+
+        h2 {
+            font-size: 24px;
+            color: #000000;
+            padding-left: 10px;
+            margin-top: 60px;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+
+        .card .value {
+            font-size: 28px;
+            color: #000000;
+            font-weight: 500;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 60px;
+            font-size: 12px;
+            color: #333;
+        }
+
+        .footer p {
+            margin: 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            font-size: 18px;
+        }
+
+        table, th, td {
+            border: 1px solid #000000;
+        }
+
+        th, td {
+            padding: 16px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #03912e;
+            color: #fff;
+            font-size: 20px;
+            font-weight: 500;
+        }
+        
+        .grafico {
+            display: flex;
+            justify-content: center;
+        }
+
+        .casilla {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Informe de Usuarios por Oficina</h1>
+
+        <div class="section">
+            <h2>Distribución de Usuarios por Oficina</h2> 
+            <div class="grafico">
+                <img src="data:image/png;base64,{{chart}}" alt="Gráfico de torta">
+            </div>
+        </div>
+
+        <div class="section card">
+            <h2>Cantidad de Oficinas: <span class="value">{{cantidad}}</span></h2>  
+        </div>
+
+        <div class="section last">
+            <h2>Detalle de Usuarios por Oficina</h2>
+            <table>
+                <tr>
+                    <th>Oficina</th>
+                    <th>Cantidad</th>
+                </tr>
+                {{#each detalle}}
+                    <tr>
+                        <td>{{nombre}}</td>
+                        <td class="casilla">{{cantidadU}}</td>
+                    </tr>
+                {{/each}}
+            </table>
+        </div>
+
+        <div class="footer">
+            <p>Programación 3 - Año 2024</p>
+        </div>
+    </div>
+</body>
+</html>
